@@ -34,8 +34,8 @@ impl Component for Model {
         let link = ctx.link();
         html! {
             <div>
-                <button onclick={link.callback(|_| Msg::AddOne)}>{ "+1" }</button>
-                <p>{ self.value }</p>
+                <button onclick={link.callback(|_| Msg::AddOne)} class="pointer-events-auto ml-8 rounded-md bg-gray-600 py-2 px-3 text-[0.8125rem] font-semibold leading-5 text-white hover:bg-gray-500">{ "+1" }</button>
+                <p class="ml-8  py-2">{ self.value }</p>
             </div>
         }
     }
