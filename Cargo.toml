@@ -1,0 +1,8 @@
+[package]
+name = "yew-app"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+# you can check the latest version here: https://crates.io/crates/yew
+yew = "0.19"
