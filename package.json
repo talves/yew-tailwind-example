@@ -7,13 +7,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "build:app": "trunk build --release",
     "tw:build": "NODE_ENV=production tailwindcss -c ./tailwind.config.js -o ./tailwind.css --minify",
     "tw:dev": "tailwindcss -c ./tailwind.config.js -o ./tailwind.css",
     "start": "trunk serve"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.18",
     "tailwindcss": "^3.2.1"
   }
 }
