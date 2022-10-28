@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "build": "yarn tw:build && yarn build:app",
-    "build:app": "yarn trunk build --release",
+    "build:app": "trunk build --release",
     "tw:build": "NODE_ENV=production tailwindcss -c ./tailwind.config.js -o ./tailwind.css --minify",
     "tw:dev": "tailwindcss -c ./tailwind.config.js -o ./tailwind.css",
     "start": "concurrently \"yarn tw:dev --watch\" \"trunk serve\""
