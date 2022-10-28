@@ -41,11 +41,9 @@ impl Component for Model {
               </span>
             </h1>
             <div class="mx-auto mt-5 max-w-xl sm:flex sm:justify-center md:mt-8">
-                <div>
-                    <button onclick={link.callback(|_| Msg::AddOne)} class="pointer-events-auto ml-8 rounded-md bg-primary-400 py-2 px-3 text-[0.8125rem] font-bold leading-5 hover:text-gray hover:bg-secondary-700">{ "+1" }</button>
-                    <p class="ml-8  py-2">{ self.value }</p>
-                </div>
+                <button onclick={link.callback(|_| Msg::AddOne)} class="pointer-events-auto mt-8 rounded-md bg-primary-400 py-2 px-3 text-[0.8125rem] font-bold leading-5 hover:text-gray hover:bg-secondary-700">{ "Add +1" }</button>
             </div>
+            <div class="mx-auto mt-5 max-w-xl sm:flex sm:justify-center md:mt-8"><p class="mt-4 p-4 outline bg-secondary-200">{ self.value }</p></div>
             </div>
             </div>
         }
