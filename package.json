@@ -7,6 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "install_trunk": "chmod 744 install_trunk.sh && TRUNK_VERSION=0.16.0 ./install_trunk.sh",
     "build": "yarn tw:build && yarn build:app",
     "build:app": "trunk build --release",
     "tw:build": "NODE_ENV=production tailwindcss -c ./tailwind.config.js -o ./tailwind.css --minify",

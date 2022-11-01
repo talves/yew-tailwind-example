@@ -1,3 +1,3 @@
 [build]
     publish = "dist/"
-    command = "chmod 744 install_trunk.sh && ./install_trunk.sh && yarn build"
+    command = "yarn install_trunk && yarn build"
